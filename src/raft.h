@@ -95,6 +95,7 @@ public:
                          rpcz::reply<Empty> reply) {
     std::unique_lock<std::mutex> locker(lock_);
 
+    //get current time stamp
     this->leader_active_time_ = std::chrono::duration_cast< std::chrono::milliseconds >(
     std::chrono::system_clock::now().time_since_epoch()).count();
 
