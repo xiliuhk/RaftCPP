@@ -152,7 +152,7 @@ TEST_F(RaftTest, ReElectionTest) {
     }
   }
 
-  EXPECT_EQ(follower_count, peer_num-2);
+  EXPECT_EQ(follower_count, peer_num - 2);
   EXPECT_EQ(leader_count, 1);
   EXPECT_EQ(candidate_count, 0);
   EXPECT_EQ(unknown_count, 0);
